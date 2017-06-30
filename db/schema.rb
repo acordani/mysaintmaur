@@ -10,10 +10,57 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170626154506) do
+ActiveRecord::Schema.define(version: 20170630153259) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "announces", force: :cascade do |t|
+    t.string   "title"
+    t.integer  "bed"
+    t.integer  "bath"
+    t.string   "surface"
+    t.text     "description"
+    t.integer  "tax_month"
+    t.integer  "price"
+    t.string   "address"
+    t.string   "locality"
+    t.string   "class_energy"
+    t.string   "transports"
+    t.string   "view"
+    t.string   "exposition"
+    t.string   "floor"
+    t.string   "floor_max"
+    t.boolean  "elevator"
+    t.integer  "user_id"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.integer  "property_id"
+    t.integer  "shower"
+  end
+
+  create_table "attachinary_files", force: :cascade do |t|
+    t.string   "attachinariable_type"
+    t.integer  "attachinariable_id"
+    t.string   "scope"
+    t.string   "public_id"
+    t.string   "version"
+    t.integer  "width"
+    t.integer  "height"
+    t.string   "format"
+    t.string   "resource_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["attachinariable_type", "attachinariable_id", "scope"], name: "by_scoped_parent", using: :btree
+  end
+
+  create_table "properties", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
