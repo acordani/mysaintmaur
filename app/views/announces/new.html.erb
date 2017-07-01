@@ -86,6 +86,17 @@
         		</div>
         	</label>
         </div>
+<div class="col-md-3">
+        	<label>
+        		Quelques Photos !
+        <div class="input-group">
+      		<i class="fa fa-upload" aria-hidden="true"></i>
+        	<div class="form-group">
+        		<%= f.input :photos, as: :attachinary, label: '', input_html: { class: 'photo_upload form-control' }, label_html: { class: 'photo_upload_label' }%>
+        	</div>
+        </div>
+ </label>
+ </div>
 	
 	
 	<%= f.input :tax_month %>
