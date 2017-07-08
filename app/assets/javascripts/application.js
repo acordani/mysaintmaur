@@ -4,4 +4,5 @@
 //= require cloudinary/jquery.cloudinary
 //= require attachinary
 //= require bootstrap-sprockets
+//= require owl.carousel
 //= require_tree .

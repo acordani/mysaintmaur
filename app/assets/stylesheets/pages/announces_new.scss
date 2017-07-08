@@ -202,7 +202,23 @@ color: #E4E4E4 !important;
   height: 50px;
 }
 
+// COMMUN : SLIDESHOW
+.slider {
+  height: 30rem !important;
+  .slides {
+    height: 26rem !important;
+  }
+  .indicator-item {
+    height: 1rem !important;
+    width: 1rem !important;
+    margin: 0 1rem !important;
+  }
+}
 
+.slider .indicators .indicator-item.active {
+  background-color: #E96A41;
+}
+// COMMUN : SLIDESHOW
 
 
 }

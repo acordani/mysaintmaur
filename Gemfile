@@ -17,6 +17,8 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 
+gem 'owlcarousel-rails'
+
 
 
 #Photos
