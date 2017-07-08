@@ -17,6 +17,8 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 
+
+
 #Photos
 
 gem 'cloudinary', '1.1.7'

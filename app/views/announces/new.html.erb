@@ -65,7 +65,7 @@
         	<label>
         		Nombre de Douches
         		<div class="form-group">
-        			<%= f.input :shower, class: "form-control title-placeholder", label: false %>
+        			<%= f.input :shower, class: "form-control title-placeholder", label: false, collection: 1..4 %>
         		</div>
         	</label>
         </div>
@@ -103,7 +103,7 @@
 	<%= f.input :price %>
 	<%= f.input :address %>
 	<%= f.input :locality %>
-	
+	<%= f.input :class_energy, collection: Announce::CLASS_ENERGY %>
 	<%= f.input :transports %>
 	<%= f.input :view %>
 	<%= f.input :exposition %>
