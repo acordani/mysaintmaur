@@ -1,6 +1,6 @@
 class Announce < ApplicationRecord
 	has_attachments :photos, maximum: 10
-	belongs_to :properties
+	belongs_to :property
 
 	CLASS_ENERGY = %w(A B C D E F G Vierge)
 
@@ -10,4 +10,8 @@ class Announce < ApplicationRecord
     	letter = self.class_energy
     	return "note-class_energy-#{letter.downcase}.png"
   	end
+
+  	validates :title, presence: true
+  	validates :price, presence: true
+  	validates :description, presence: true
 end
