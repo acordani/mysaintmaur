@@ -19,6 +19,7 @@ gem 'uglifier'
 
 gem 'owlcarousel-rails'
 
+gem "geocoder"
 
 
 #Photos

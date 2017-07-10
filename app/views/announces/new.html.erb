@@ -20,7 +20,18 @@
           		</label>
         	</div>
         
-   
+            <div class="col-md-12">
+                <label>
+                    L'adresse du bien à vendre
+                    <fieldset>
+                        <div class="form-group">
+                            <input id="user_input_autocomplete_address" name="address" class="form-control" placeholder="25 Rue du petit Musc, 75004 Paris">
+
+                        </div>
+                    </fieldset>
+                    
+                </label>
+            </div>
     
 
     
@@ -102,7 +113,7 @@
 	<%= f.input :tax_month %>
 	<%= f.input :price %>
 	<%= f.input :address %>
-	<%= f.input :locality %>
+	
 	<%= f.input :class_energy, collection: Announce::CLASS_ENERGY %>
 	<%= f.input :transports %>
 	<%= f.input :view %>
@@ -111,6 +122,10 @@
 	<%= f.input :floor_max %>
 	<%= f.input :elevator %>
 	<%= f.button :submit %>
+<% end %>
+
+<%= content_for(:after_js) do %>
+  <script src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyDtSjv-fQlhRwNDSwMLdyfryCv2Sp5WSzA"></script>
 <% end %>
 
 
