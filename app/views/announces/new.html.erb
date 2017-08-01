@@ -28,7 +28,7 @@
                         
                         <fieldset>
                             <div class="form-group">
-                                <input id="user_input_autocomplete_address" name="address" class="form-control" placeholder="25 Rue du petit Musc, 75004 Paris">
+                                <input id="user_input_autocomplete_address" name="[announce]address" class="form-control" placeholder="25 Rue du petit Musc, 75004 Paris">
                             </div>
                         </fieldset>        
                     </div>
@@ -108,9 +108,13 @@
         	
         
 
-<%= content_for(:after_js) do %>
-  <script src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyCUrWgkcokYhmGZKUs1l1wm2SFmAeWGLJU"></script>
-<% end %>
+
+
+<% content_for(:after_js) do %>
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyASApFE9y-yXUiYrAXgi1TF275y0lcMg8s">
+  </script>
+  <% end %>
 
 
 
