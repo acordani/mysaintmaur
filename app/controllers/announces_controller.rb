@@ -49,6 +49,8 @@ class AnnouncesController < ApplicationController
   			:user_id,
   			:latitude,
   			:longitude,
+  			:shower,
+  			:property_id,
   			photos: [])
 	end
 end
