@@ -109,7 +109,7 @@
         
 
 <%= content_for(:after_js) do %>
-  <script src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyDtSjv-fQlhRwNDSwMLdyfryCv2Sp5WSzA"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=#{ENV['GOOGLE_API_BROWSER_KEY']}"></script>
 <% end %>
 
 
