@@ -51,6 +51,7 @@ class AnnouncesController < ApplicationController
   			:longitude,
   			:shower,
   			:property_id,
+  			:isgeoloc,
   			photos: [])
 	end
 end

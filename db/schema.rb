@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170630153259) do
+ActiveRecord::Schema.define(version: 20170801161046) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20170630153259) do
     t.datetime "updated_at",   null: false
     t.integer  "property_id"
     t.integer  "shower"
+    t.boolean  "isgeoloc"
   end
 
   create_table "attachinary_files", force: :cascade do |t|
